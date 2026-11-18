@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fdfaf4" />
+    <meta
+      name="description"
+      content="Explore courses and register students at Hendrix Kao Learning."
+    />
+    <title>Hendrix Kao Learning | Courses and Student Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#home" class="site-logo" aria-label="Hendrix Kao Learning home"
+          ><img class="logo-mark" src="images/logo-candle-book.svg" alt="" width="38" height="38" /> Hendrix Kao Learning<span class="logo-period"
+            >.</span
+          ><small>LEARNING</small></a
+        >
+        <button
+          id="menuButton"
+          class="mobile-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="siteNavigation"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav class="site-nav" id="siteNavigation" aria-label="Main navigation">
+          <a href="#home" data-page="home" class="nav-link active">Home</a>
+          <a href="#courses" data-page="courses" class="nav-link"
+            >Our courses</a
+          >
+          <a href="#register" data-page="register" class="nav-link"
+            >Registration</a
+          >
+          <a href="#students" data-page="students" class="nav-link"
+            >Student directory</a
+          >
+          <a href="#register" class="btn btn-primary nav-cta"
+            >Apply now <span>↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="mainContent">
+      <section class="page active" id="page-home" aria-labelledby="homeTitle">
+        <div class="hero-section">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> YOUR JOURNEY STARTS HERE
+            </div>
+            <h1 id="homeTitle">Discover what<br />you can <em>become.</em></h1>
+            <p>
+              Make your next big move with practical courses, inspiring ideas,
+              and the freedom to learn something new. Find your path at
+              Hendrix Kao Learning.
+            </p>
+            <div class="hero-actions">
+              <a href="#courses" class="btn btn-primary btn-large"
+                >Explore our courses <span>↗</span></a
+              ><a href="#register" class="btn btn-text"
+                >Register as a student <span>→</span></a
+              >
+            </div>
+            <div class="hero-footnote">
+              <span class="circle-stack"><i>✦</i><i>✧</i><i>✳</i></span
+              ><span>Build your skills. Shape your future.</span>
+            </div>
+          </div>
+          <div
+            class="hero-visual"
+            aria-label="Illustrated books and learning materials"
+            role="img"
+          >
+            <div class="visual-sun"></div>
+            <div class="visual-arch"></div>
+            <div class="floating-star star-one">✳</div>
+            <div class="floating-star star-two">✦</div>
+            <div class="book-stack">
+              <div class="book book-a"><span>DESIGN</span></div>
+              <div class="book book-b"><span>CREATE</span></div>
+              <div class="book book-c"><span>LEARN</span></div>
+            </div>
+            <div class="visual-note">
+              <span>✳</span><strong>Learning opens<br />new doors.</strong>
+            </div>
+            <span class="visual-caption"
+              >HENDRIX KAO LEARNING / EDUCATION FOR EVERYONE</span
+            >
+          </div>
+        </div>
+        <section class="intro-strip" aria-label="What you can do">
+          <span>LEARN WITH PURPOSE</span>
+          <p>Discover courses. Find your interests. Take the next step.</p>
+          <a href="#register">Start your journey ↗</a>
+        </section>
+        <section class="home-section" aria-labelledby="whyTitle">
+          <div class="home-section-top">
+            <div>
+              <div class="eyebrow">A PLACE TO GROW</div>
+              <h2 id="whyTitle">
+                Everything you need to<br /><em>get started.</em>
+              </h2>
+            </div>
+            <p>
+              Simple tools to help you explore subjects, join a course, and keep
+              your learning details organized.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-item">
+              <span class="feature-number">01 / EXPLORE</span>
+              <div class="feature-icon peach">✳</div>
+              <h3>Find your passion</h3>
+              <p>
+                Discover practical subjects through our curated course
+                catalogue.
+              </p>
+              <a href="#courses">Browse courses ↗</a>
+            </article>
+            <article class="feature-item">
+              <span class="feature-number">02 / ENROLL</span>
+              <div class="feature-icon lilac">✎</div>
+              <h3>Take the first step</h3>
+              <p>Register for a course in just a few easy steps.</p>
+              <a href="#register">Register today ↗</a>
+            </article>
+            <article class="feature-item">
+              <span class="feature-number">03 / CONNECT</span>
+              <div class="feature-icon mint">⌕</div>
+              <h3>Stay organized</h3>
+              <p>
+                Access your saved registration details in the student directory.
+              </p>
+              <a href="#students">View directory ↗</a>
+            </article>
+          </div>
+        </section>
+        <section class="home-cta">
+          <div>
+            <span class="eyebrow">YOUR NEXT CHAPTER</span>
+            <h2>Ready to learn<br />something <em>amazing?</em></h2>
+            <p>It all starts with one step.</p>
+          </div>
+          <a href="#register" class="btn btn-light">Join Hendrix Kao Learning today ↗</a>
+        </section>
+      </section>
+      <section
+        class="page"
+        id="page-register"
+        aria-labelledby="registerTitle"
+        hidden
+      >
+        <div class="page-heading">
+          <div class="eyebrow">STUDENT ENROLLMENT</div>
+          <h1 id="registerTitle">Register a student</h1>
+          <p>
+            Enter the student's information below. Fields marked
+            <span class="required">*</span> are required.
+          </p>
+        </div>
+        <div class="form-layout">
+          <div class="panel form-panel">
+            <div class="form-section-heading">
+              <span class="section-number">01</span>
+              <div>
+                <h2>Personal information</h2>
+                <p>Basic details for the student record</p>
+              </div>
+            </div>
+            <form id="registrationForm" novalidate>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="studentId"
+                    >Student ID <span class="required">*</span></label
+                  ><input
+                    id="studentId"
+                    name="studentId"
+                    type="text"
+                    placeholder="e.g. STU2026001"
+                    maxlength="30"
+                    autocomplete="off"
+                    required
+                  /><small class="field-error" id="studentIdError"></small>
+                </div>
+                <div class="field">
+                  <label for="studentName"
+                    >Full name <span class="required">*</span></label
+                  ><input
+                    id="studentName"
+                    name="studentName"
+                    type="text"
+                    placeholder="e.g. Alex Morgan"
+                    maxlength="80"
+                    autocomplete="name"
+                    required
+                  /><small class="field-error" id="studentNameError"></small>
+                </div>
+              </div>
+              <div class="field">
+                <label for="email"
+                  >Email address <span class="required">*</span></label
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="student@example.com"
+                  maxlength="120"
+                  autocomplete="email"
+                  required
+                /><small class="field-error" id="emailError"></small>
+              </div>
+              <fieldset class="field">
+                <legend>Gender <span class="required">*</span></legend>
+                <div class="choice-group">
+                  <label class="radio-pill"
+                    ><input type="radio" name="gender" value="Male" />
+                    Male</label
+                  ><label class="radio-pill"
+                    ><input type="radio" name="gender" value="Female" />
+                    Female</label
+                  ><label class="radio-pill"
+                    ><input type="radio" name="gender" value="Other" />
+                    Other</label
+                  >
+                </div>
+                <small class="field-error" id="genderError"></small>
+              </fieldset>
+              <div class="form-divider"></div>
+              <div class="form-section-heading">
+                <span class="section-number">02</span>
+                <div>
+                  <h2>Academic information</h2>
+                  <p>Course enrollment and interests</p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="courseSelect"
+                  >Select a course <span class="required">*</span></label
+                ><select id="courseSelect" name="course" required>
+                  <option value="">Choose a course</option></select
+                ><small class="field-error" id="courseError"></small>
+              </div>
+              <fieldset class="field">
+                <legend>
+                  Skills & interests <span class="optional">(optional)</span>
+                </legend>
+                <div class="skills-grid">
+                  <label class="skill-choice"
+                    ><input
+                      type="checkbox"
+                      name="skills"
+                      value="HTML & CSS"
+                    /><span>HTML & CSS</span></label
+                  ><label class="skill-choice"
+                    ><input
+                      type="checkbox"
+                      name="skills"
+                      value="JavaScript"
+                    /><span>JavaScript</span></label
+                  ><label class="skill-choice"
+                    ><input
+                      type="checkbox"
+                      name="skills"
+                      value="UI/UX Design"
+                    /><span>UI/UX Design</span></label
+                  ><label class="skill-choice"
+                    ><input
+                      type="checkbox"
+                      name="skills"
+                      value="Data Analysis"
+                    /><span>Data Analysis</span></label
+                  ><label class="skill-choice"
+                    ><input
+                      type="checkbox"
+                      name="skills"
+                      value="Problem Solving"
+                    /><span>Problem Solving</span></label
+                  ><label class="skill-choice"
+                    ><input
+                      type="checkbox"
+                      name="skills"
+                      value="Teamwork"
+                    /><span>Teamwork</span></label
+                  >
+                </div>
+              </fieldset>
+              <div
+                role="status"
+                aria-live="polite"
+                id="formMessage"
+                class="form-message"
+                hidden
+              ></div>
+              <div class="form-actions">
+                <button type="reset" class="btn btn-outline">Reset form</button
+                ><button type="submit" class="btn btn-primary">
+                  Register student <span>→</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <aside class="form-aside">
+            <div class="side-tip">
+              <div class="tip-icon">✧</div>
+              <h3>A few things to know</h3>
+              <p>
+                Make sure the student ID is unique and the email address is
+                valid before submitting.
+              </p>
+              <div class="tip-divider"></div>
+              <p>
+                Student records are stored locally in this browser. They aren't
+                uploaded to a server.
+              </p>
+            </div>
+            <div class="aside-mini">
+              🔒
+              <span>Your data stays on this device and browser profile.</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section
+        class="page"
+        id="page-courses"
+        aria-labelledby="coursesTitle"
+        hidden
+      >
+        <div class="page-heading">
+          <div class="eyebrow">LEARNING OPPORTUNITIES</div>
+          <h1 id="coursesTitle">Course catalogue</h1>
+          <p>
+            Explore our courses and find the right subject for your next step.
+          </p>
+        </div>
+        <div class="toolbar">
+          <div class="search-wrap">
+            <span aria-hidden="true">⌕</span
+            ><label class="sr-only" for="courseSearch">Search courses</label
+            ><input
+              id="courseSearch"
+              type="search"
+              placeholder="Search by course name, code or topic..."
+            />
+          </div>
+          <label class="sr-only" for="categoryFilter">Filter category</label
+          ><select id="categoryFilter" class="filter-select">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+        <div class="results-meta">
+          <strong id="courseResultCount">6 courses</strong
+          ><span>Available for registration</span>
+        </div>
+        <div class="course-grid" id="courseGrid"></div>
+        <div class="empty-state" id="courseEmpty" hidden>
+          <div>⌕</div>
+          <h3>No courses found</h3>
+          <p>Try another keyword or choose a different category.</p>
+          <button class="btn btn-outline" id="clearCourseFilters">
+            Clear filters
+          </button>
+        </div>
+      </section>
+      <section
+        class="page"
+        id="page-students"
+        aria-labelledby="studentsTitle"
+        hidden
+      >
+        <div class="page-heading">
+          <div class="eyebrow">STUDENT DIRECTORY</div>
+          <h1 id="studentsTitle">Student records</h1>
+          <p>View and search the students registered in this browser.</p>
+        </div>
+        <div class="toolbar student-toolbar">
+          <div class="search-wrap">
+            <span aria-hidden="true">⌕</span
+            ><label class="sr-only" for="studentSearch"
+              >Search student records</label
+            ><input
+              id="studentSearch"
+              type="search"
+              placeholder="Search by student ID or name..."
+            />
+          </div>
+          <div class="toolbar-buttons">
+            <button class="btn btn-outline" id="exportCsv">↓ Export CSV</button
+            ><a class="btn btn-primary" href="#register">+ Add student</a>
+          </div>
+        </div>
+        <div class="panel table-panel">
+          <div class="table-header">
+            <div>
+              <h2>All students</h2>
+              <p id="studentResultCount">0 students registered</p>
+            </div>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>STUDENT</th>
+                  <th>STUDENT ID</th>
+                  <th>GENDER</th>
+                  <th>COURSE</th>
+                  <th>SKILLS</th>
+                  <th>ACTION</th>
+                </tr>
+              </thead>
+              <tbody id="studentTableBody"></tbody>
+            </table>
+          </div>
+          <div class="empty-state" id="studentEmpty">
+            <div>♙</div>
+            <h3>No students registered yet</h3>
+            <p>Start by adding your first student.</p>
+            <a href="#register" class="btn btn-primary">+ Register a student</a>
+          </div>
+          <div class="empty-state" id="studentNoMatch" hidden>
+            <div>⌕</div>
+            <h3>No matching students</h3>
+            <p>Try searching with a different name or student ID.</p>
+            <button class="btn btn-outline" id="clearStudentSearch">
+              Clear search
+            </button>
+          </div>
+        </div>
+        <p class="data-note">
+          ⓘ Student records are saved using browser localStorage on this device.
+          Clearing browser data may delete them.
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div>
+          <a href="#home" class="footer-brand"><img class="footer-logo" src="images/logo-candle-book.svg" alt="" width="42" height="42" /> Hendrix Kao Learning<span>.</span></a>
+          <p>
+            A simple place to discover courses,<br />grow your skills, and start
+            learning.
+          </p>
+        </div>
+        <div>
+          <h3>EXPLORE</h3>
+          <a href="#home">Home</a><a href="#courses">Courses</a
+          ><a href="#register">Registration</a
+          ><a href="#students">Student directory</a>
+        </div>
+        <div>
+          <h3>ABOUT THIS PROJECT</h3>
+          <p>
+            A student and course management website<br />created using HTML, CSS
+            & JavaScript.
+          </p>
+          <p>Records are stored in this browser only.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >© <span id="year"></span> Hendrix Kao Learning. Educational
+          project.</span
+        ><span>Made for curious minds ✳</span>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+    <dialog id="registrationDialog" class="registration-dialog" aria-labelledby="registrationTitle" aria-describedby="registrationSuccessText">
+      <div class="completion-icon" role="img" aria-label="Registration complete">&#10003;</div>
+      <h2 id="registrationTitle">Registration successful!</h2>
+      <p id="registrationSuccessText"></p>
+      <form method="dialog">
+        <button class="btn btn-primary" autofocus>OK, got it</button>
+      </form>
+    </dialog>
+    <dialog id="deleteDialog" class="confirm-dialog">
+      <h2>Delete student?</h2>
+      <p id="deleteDialogText">This action cannot be undone.</p>
+      <div>
+        <button class="btn btn-outline" id="cancelDelete">Cancel</button
+        ><button class="btn btn-danger" id="confirmDelete">
+          Delete student
+        </button>
+      </div>
+    </dialog>
+  </body>
+</html>
